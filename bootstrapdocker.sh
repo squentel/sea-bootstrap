@@ -30,4 +30,4 @@ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli container
 
 echo "======= DOCKER : ADD $USER to docker usergroup"
 sudo usermod -a -G docker "$USER"
-
+newgrp docker
