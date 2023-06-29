@@ -30,6 +30,7 @@ sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli container
 
 echo "======= DOCKER : ADD $USER to docker usergroup"
 sudo usermod -a -G docker "$USER"
+sudo newgrp docker
 
 echo "======= INSTALLATION OF microk8s channel 1.22/stable"
 sudo snap install microk8s --classic --channel=1.22/stable
